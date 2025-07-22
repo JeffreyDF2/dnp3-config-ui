@@ -16,20 +16,6 @@ const initialErrorState: ErrorMap = {
   mapping: [],
 };
 
-/*
-function errorReducer(state: ErrorMap, action: ErrorAction): ErrorMap {
-  switch (action.type) {
-    case "SET_ERRORS":
-      return { ...state, [action.section]: action.errors };
-    case "CLEAR_ERRORS":
-      return { ...state, [action.section]: [] };
-    case "CLEAR_ALL_ERRORS":
-      return { ...initialErrorState };
-    default:
-      return state;
-  }
-}
-*/
 function errorReducer(state: ErrorMap, action: ErrorAction): ErrorMap {
   switch (action.type) {
     case "SET_ERRORS":

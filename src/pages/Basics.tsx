@@ -47,30 +47,30 @@ export default function Basic() {
           <CardTitle className="text-xl">Set Device Address</CardTitle>
         </CardHeader>
         <CardContent className="space-y-6">
-        {/* Device Address */}
-        <div>
-          <Tooltip>
-            <TooltipTrigger asChild>
-              <Label htmlFor="deviceAddress">Device Address</Label>
-            </TooltipTrigger>
-            <TooltipContent side="top">
-              <p>{tooltips.address}</p>
-            </TooltipContent>
-          </Tooltip>
-          <input
-            type="number"
-            value={state.address || ""}
-            onChange={(e) =>
-              dispatch({
-                type: "SET_ADDRESS",
-                payload: e.target.value,
-              })
-            }
-            className="block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-            placeholder="Enter device address (0–65519)"
-          />
-          <FieldError section="basic" keyword="Address" />
-        </div>
+          {/* Device Address */}
+          <div>
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <Label htmlFor="deviceAddress">Device Address</Label>
+              </TooltipTrigger>
+              <TooltipContent side="top">
+                <p>{tooltips.address}</p>
+              </TooltipContent>
+            </Tooltip>
+            <input
+              type="number"
+              value={state.address || ""}
+              onChange={(e) =>
+                dispatch({
+                  type: "SET_ADDRESS",
+                  payload: e.target.value,
+                })
+              }
+              className="block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+              placeholder="Enter device address (0–65519)"
+            />
+            <FieldError section="basic" keyword="Address" />
+          </div>
         </CardContent>
       </Card>
       <Card className="max-w-3xl mx-auto">

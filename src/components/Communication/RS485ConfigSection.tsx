@@ -37,7 +37,9 @@ export default function RS485ConfigSection({ rs485Config, update }: any) {
       <div className="space-y-2">
         <Tooltip>
           <TooltipTrigger asChild>
-            <Label htmlFor="baudRate" className="text-sm font-medium text-left">Baud Rate</Label>
+            <Label htmlFor="baudRate" className="text-sm font-medium text-left">
+              Baud Rate
+            </Label>
           </TooltipTrigger>
           <TooltipContent side="top">
             <p>{tooltips.connection.rs485Config.baudRate}</p>
