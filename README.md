@@ -30,6 +30,22 @@ The SEL DNP3 UI application is a modular React project structured by feature. It
 
 ---
 
++-------------------+       +-------------------+       +-------------------+
+|                   |       |                   |       |                   |
+|   User Input      |       | ConfigContext     |       | ErrorValidator    |
+|   (Forms)         |  ->   | Updates Config    |   ->  | Detects Config    |
+|                   |       | State             |       | Change            |
++-------------------+       +-------------------+       +-------------------+
+                                                                  |  
+        -----------------------------------------------------------
+        |
++-------------------+       +-------------------+       +-------------------+
+|                   |       |                   |       |                   |
+| Clear Errors in   |       | Run Validator     |       | Errors Returned   |
+| ErrorContext      |  ->   | (validation.ts)   |   ->  | to ErrorContext   |
+|                   |       |                   |       |                   |
++-------------------+       +-------------------+       +-------------------+
+
 ## Component Design
 
 ### Communication Settings
