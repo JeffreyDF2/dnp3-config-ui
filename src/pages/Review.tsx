@@ -6,7 +6,7 @@ import { format } from "date-fns";
 import { useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
-import ConfigSummary from "@/components/Review/ConfigSummary";
+import ConfigSummary from "@/components/review/ConfigSummary";
 import { Separator } from "@/components/ui/separator";
 import { useErrorContext } from "@/context/ErrorContext";
 

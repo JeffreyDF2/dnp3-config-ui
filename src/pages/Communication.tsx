@@ -1,10 +1,10 @@
 import { useConfig } from "@/context/ConfigContext";
-import TCPConfigSection from "../components/Communication/TCPConfigSection";
-import RS485ConfigSection from "../components/Communication/RS485ConfigSection";
+import TCPConfigSection from "../components/communication/TCPConfigSection";
+import RS485ConfigSection from "../components/communication/RS485ConfigSection";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { Label } from "@/components/ui/label";
 import { Separator } from "@/components/ui/separator";
-import { Sav5KeyInput } from "@/components/Communication/Sav5KeyInput";
+import { Sav5KeyInput } from "@/components/communication/Sav5KeyInput";
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 
 export default function Communication() {

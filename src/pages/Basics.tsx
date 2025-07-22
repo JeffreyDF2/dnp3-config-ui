@@ -3,10 +3,10 @@ import { Label } from "@/components/ui/label";
 import { Switch } from "@/components/ui/switch";
 import { Separator } from "@/components/ui/separator";
 import { useState } from "react";
-import AdvancedMapping from "../components/Mapping/AdvancedMapping";
-import BasicBinaryInput from "@/components/Mapping/BasicBinaryInput";
-import BasicAnalogInput from "@/components/Mapping/BasicAnalogInput";
-import BasicCommandOutput from "@/components/Mapping/BasicCommandOutput";
+import AdvancedMapping from "../components/mapping/AdvancedMapping";
+import BasicBinaryInput from "@/components/mapping/BasicBinaryInput";
+import BasicAnalogInput from "@/components/mapping/BasicAnalogInput";
+import BasicCommandOutput from "@/components/mapping/BasicCommandOutput";
 import { useConfig } from "@/context/ConfigContext";
 import FieldError from "@/components/FieldError";
 import {
